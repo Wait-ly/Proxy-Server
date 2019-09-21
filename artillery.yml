@@ -1,0 +1,13 @@
+config:
+  target: 'http://localhost:3000'
+  processor: "./artillery-functions.js"
+  phases:
+    - duration: 60
+      arrivalRate: 4
+scenarios:
+  - flow:
+    - function: generateRandomMenuIdTop90
+    - loop:
+      - get:
+          url: "/api/menu/{{ $loopElement }}"
+      over: menuIds
