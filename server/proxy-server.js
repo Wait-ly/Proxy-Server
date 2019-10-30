@@ -22,7 +22,7 @@ app.get('/index_bundle.js', (req, res) => {
       res.send(response.data);
     })
     .catch((err) => {
-      console.log(`<><><><><><><><><>AHHHHHHH GET OUT THERE'S AN ERROR WE ALL GONNA DIEEEEEEEE<><><><><><><><><><>`)
+      console.log(`ERROR`)
       console.log(err);
       res.send();
     })
@@ -36,7 +36,7 @@ app.get('/api/menu/:id', (req, res) => {
       res.send(response.data);
     })
     .catch((err) => {
-      console.log(`XxXxXxXxXxXxXxXxXxX  AHHHHHHH RUN AWAY, RUN AWAY, THERE'S AN Ȅ͖̰̱̠̞̩̬̱̔̆̈́ͩR̳̥̈́̆͆̃̂̊R͚̰̈́́O̱̫͇̦̙͋̉͛ͣͥ̆̚R̟̠̹ͬ͊̈ͬ̑̃ WE ALL GONNA DIEEEEEEEE  XxXxXxXxXxXxXxXxXxX`);
+      console.log(`ERROR`);
       console.log(err);
       res.send();
     })
